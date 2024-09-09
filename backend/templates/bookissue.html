@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Issued Confirmation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #555;
+        }
+
+        h2 {
+            color: #502ecc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Book Issued Confirmation</h2>
+    <p>Thank you for issuing a book! Here are the details:</p>
+
+    <table>
+        <tr>
+            <th>Book Title</th>
+            <td>{{ book.title }}</td>
+        </tr>
+        <tr>
+            <th>Author</th>
+            <td>Rs.{{ book.author }}</td>
+        </tr>
+        <tr>
+            <th>Date Issued</th>
+            <td>{{ cart_item.date_issued }}</td>
+        </tr>
+        <tr>
+            <th>Date Return</th>
+            <td>{{ cart_item.date_return }}</td>
+        </tr>
+    </table>
+
+    
+</body>
+
+</html>
